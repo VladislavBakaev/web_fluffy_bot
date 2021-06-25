@@ -1,0 +1,39 @@
+#queue-div {
+    background-color: #271f2170;
+    margin: 5px 20px 0px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 97%;
+}
+
+#queue-div > p{
+    margin: 15px 0px 15px 15px;
+    color: #fff;
+}
+
+#queue-movement {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    cursor:move;
+}
+
+#queue-movement > li {
+    display: inline;
+    color: #fff;
+    font-size: 18px;
+    margin: 0px 2px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    height: 30px;
+    background-color: #271f21ec;
+}
+
+#queue-movement > li.selected {
+    background-color: #f9eadc;
+    color: black;
+}
+

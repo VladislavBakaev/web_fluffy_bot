@@ -1,0 +1,121 @@
+<script>
+    var url_cr = "js/create.js";
+    var url_mod = "js/modal.js";
+    var url_mover = "js/queue_mover.js"
+    $.getScript(url_mod);
+    $.getScript(url_cr);
+    $.getScript(url_mover);
+</script>
+
+<div id="queue-div">
+    <p>Queue movement state</p><br>
+    <ul id="queue-movement">
+    </ul>
+</div>
+
+<div id="create-div">
+    <div class="slider-div">
+        <div id="position" class="slider-param-div">
+            <p class="slider-param-name">Position</p>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 1</p>
+                <span>-150</span><input type="range" min="-150" max="150" value="0" step="1" class="slider-range"><span>150</span>
+                <p class="value-field">0</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 2</p>
+                <span>-150</span><input type="range" min="-150" max="150" value="0" step="1" class="slider-range"><span>150</span>
+                <p class="value-field">0</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 3</p>
+                <span>-150</span><input type="range" min="-150" max="150" value="0" step="1" class="slider-range"><span>150</span>
+                <p class="value-field">0</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 4</p>
+                <span>-150</span><input type="range" min="-150" max="150" value="0" step="1" class="slider-range"><span>150</span>
+                <p class="value-field">0</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 5</p>
+                <span>-150</span><input type="range" min="-150" max="150" value="0" step="1" class="slider-range"><span>150</span>
+                <p class="value-field">0</p>
+            </div>
+        </div>
+
+        <div id="velocity" class="slider-param-div">
+            <p class="slider-param-name">Velocity</p>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 1</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 2</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 3</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 4</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 5</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+        </div>
+
+        <div id="slope" class="slider-param-div">
+            <p class="slider-param-name">Slope</p>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 1</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 2</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 3</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 4</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+            <div class="slider">
+                <p class="slide-motor-p">Motor 5</p>
+                <span>0</span><input type="range" min="0" max="255" value="125" step="1" class="slider-range"><span>255</span>
+                <p class="value-field">125</p>
+            </div>
+        </div>
+
+        <div id="time-delay" class="slider-param-div">
+            <p class="slider-param-name">Time delay</p>
+            <div class="slider">
+                <span>0</span><input type="range" min="0" max="1" value="0" step="0.001" class="slider-range"><span>1</span>
+                <p class="value-field">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="create-but-div">
+        <p class="emotion-name-field"></p>
+        <input id="new-movement-but" type="button" class='create-page-but' value="New movement" onclick="modal.show()">
+        <input type="button" class='create-page-but' value="Save movement state in queue" onclick="save_pose_in_queue()">
+        <input type="button" class='create-page-but' value="Play all current movement states" onclick="play_queue()">
+        <input type="button" class='create-page-but' value="Save movement" onclick="save_emotion()">
+    </div>
+</div>

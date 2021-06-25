@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Fluffy bot</title>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/spapp.js"></script>
+		<script src="js/joy.js"></script>
+		<script src="js/play.js"></script>
+		<script src="js/jquery-ui.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+		<link rel="stylesheet" type="text/css" href="css/play.css">
+		<link rel="stylesheet" type="text/css" href="css/create.css">
+		<link rel="stylesheet" type="text/css" href="css/head.css">
+		<link rel="stylesheet" type="text/css" href="css/modal.css">
+		<link rel="stylesheet" type="text/css" href="css/queue_mover.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+ 	</head>
+
+	<body>
+		<div id="header" class="row">
+		</div>
+
+		<div id="container-header" class="row">
+            <nav>
+                <a id="play-b" href="#play" class="btn">Playing movements</a>
+                <a id="create-b" href="#create" class="btn">Creating movements</a>
+                <a id="head-b" href="#head" class="btn">Head control</a>
+            </nav>
+		</div>
+
+		<div id='content-body' class="row">
+            <section id="play" src="html/play.html"></section>
+            <section id="create" src="html/create.html"></section>
+            <section id="head" src="html/head.html"></section>
+		</div>
+		
+		<div id='footer' class="row">
+		</div>
+	</body>
+    <script>
+        var nav = $("nav");
+    </script>
+</html>

@@ -1,0 +1,19 @@
+<div id="head-div">
+    <div id="camera-div">
+        <img src="images/fon.jpg">
+    </div>
+    <div id="but-joy-div">
+        <div id="but">
+            <input type="button" class='create-page-but' value="Joystic control/ face tracking" onclick="console.log('Joystic control/ face tracking')">
+        </div>
+        <div id="joy">
+            <img src="images/base.png" width="60%">
+            <div id="stick">
+                <img src="images/stick.png" width="100%"/>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var joystick1 = new JoystickController("stick", 64, 8);
+</script>

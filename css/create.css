@@ -1,0 +1,141 @@
+#create-div{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.slider-div{
+    width: 70%;
+    margin: 10px;
+}
+
+.create-but-div{
+    width: 30%;
+    margin: 10px;
+}
+
+.slider-param-div{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #271f2170;
+    margin: 20px 10px;
+}
+
+.slider{
+    height: auto;
+    width: 200px;
+    margin: 10px;
+    background-color: #332f2f30;
+    border-radius: 10px;
+}
+
+.value-field{
+    margin: 0 5px;
+    display: inline-block;
+    width: 36px;
+    text-align: center;
+}
+
+.slider span{
+    display: inline-block;
+    width: 36px;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.slider-range {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #f9eadc;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+.slider-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #271f21;
+    cursor: pointer;
+}
+
+.slider-range::-webkit-slider-thumb:disabled {
+    background: gray;
+}
+  
+.slider-range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #271f21;
+    cursor: pointer;
+}
+
+.slider-range::-moz-range-thumb:disabled {
+    background: gray;
+}
+
+.slider-param-name{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.slide-motor-p{
+    text-align: center;
+}
+
+.create-but-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emotion-name-field{
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+    white-space: normal;
+}
+
+.create-page-but{
+    margin: 20px;
+    height: 10%;
+    width: 50%;
+    font-size: 15px;
+}
+
+.create-page-but:disabled{
+    background-color: gray;
+}
+
+.create-page-but:disabled:hover{
+    background-color: gray;
+}
+
+#queue-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.queue-el{
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
